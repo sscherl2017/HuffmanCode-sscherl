@@ -25,10 +25,11 @@ public class HuffmanRunner
 	public static void main(String[] args)
 	{
 		input = "mississippi river";
+		System.out.println("Original message: " + input);
 		tree = createTree(createPriorityQueue(createMap()));
-		System.out.println(bitCreator());
-		System.out.println(bitCreator().length());
-		System.out.println(bitReader(bitCreator()));
+		System.out.println("Encrypted message: " + bitCreator());
+		System.out.println("Encryped length: " + bitCreator().length());
+		System.out.println("Decoded message: " + bitReader(bitCreator()));
 	}
 	
 	/**
